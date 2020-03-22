@@ -47,7 +47,7 @@ class UCB1TunedMctsAgent(UctMctsAgent):
     def expand(parent: Node, state: GameState) -> bool:
         """
         Generate the children of the passed "parent" node based on the available
-        moves in the passed gamestate and add them to the tree.
+        moves in the passed gamestate and add them to the tree. hrth
 
         """
         children = []
