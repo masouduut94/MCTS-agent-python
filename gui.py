@@ -101,7 +101,7 @@ class Gui:
         self.board = int_(self.board).tolist()
         self.gameboard2hexagons(self.board)  # building the game board
         self.logo = PhotoImage(file='image/hex.png')
-        self.uut_logo = PhotoImage(file='image/uut.png')
+        self.uut_logo = PhotoImage(file='image/uut_2.png')
         self.generate_black_edge()
         self.generate_white_edge()
 
@@ -354,7 +354,7 @@ class Gui:
         assigned color.
 
         """
-        if self.winner == 'none':
+        if self.winner() == 'none':
             x = self.canvas.canvasx(event.x)
             y = self.canvas.canvasy(event.y)
             idd = self.canvas.find_overlapping(x, y, x, y)
@@ -385,31 +385,31 @@ class Gui:
                         if self.game.turn() == GameMeta.PLAYERS["white"]:
                             self.game.play((x, y))
                             self.agent.move((x, y))
-                            if self.winner != 'none':
-                                messagebox.showinfo(" GAME OVER", " Wow, You won! \n Winner is %s" % self.winner)
+                            if self.winner() != 'none':
+                                messagebox.showinfo(" GAME OVER", " Wow, You won! \n Winner is %s" % self.winner())
                             return
                         else:
                             self.game.place_white((x, y))
                             self.agent.set_gamestate(self.game)
-                            if self.winner != 'none':
-                                messagebox.showinfo(" GAME OVER", " Wow, You won! \n Winner is %s" % self.winner)
+                            if self.winner() != 'none':
+                                messagebox.showinfo(" GAME OVER", " Wow, You won! \n Winner is %s" % self.winner())
                             return
                     elif turn[0].lower() == 'b':
                         self.last_move = (x, y)
                         if self.game.turn() == GameMeta.PLAYERS["black"]:
                             self.game.play((x, y))
                             self.agent.move((x, y))
-                            if self.winner != 'none':
-                                messagebox.showinfo(" GAME OVER", " Wow, You won! \n Winner is %s" % self.winner)
+                            if self.winner() != 'none':
+                                messagebox.showinfo(" GAME OVER", " Wow, You won! \n Winner is %s" % self.winner())
                             return
                         else:
                             self.game.place_black((x, y))
                             self.agent.set_gamestate(self.game)
-                            if self.winner != 'none':
-                                messagebox.showinfo(" GAME OVER", " Wow, You won! \n Winner is %s" % self.winner)
+                            if self.winner() != 'none':
+                                messagebox.showinfo(" GAME OVER", " Wow, You won! \n Winner is %s" % self.winner())
                             return
         else:
-            messagebox.showinfo(" GAME OVER ", " The game is already over! Winner is %s" % self.winner)
+            messagebox.showinfo(" GAME OVER ", " The game is already over! Winner is %s" % self.winner())
 
     def set_size(self, event):
         """
