@@ -1,11 +1,8 @@
 # Monte-Carlo-Tree-Search-Agent-for-the-Game-of-HEX
 
 ## Demo:
-<p align="center">
 
 ![Demo of MCTS General Game Player](resources/demo.gif) 
-
-</p>
 
 ### Description
 This is the code for my paper **:link: [IMPROVING MONTE CARLO TREE SEARCH BY COMBINING 
@@ -14,7 +11,7 @@ RAVE AND QUALITY-BASED REWARDS ALGORITHMS](https://www.civilica.com/Paper-CONFIT
 Researches have been done in **Urmia University of Technology**.
 <p align="center">
 
-![Urmia University of Technology](image/uut_2.png)
+<img src="https://github.com/masouduut94/MCTS-agent-python/tree/master/image/uut_2.png">
 
 </p>
 #### Authors: 
