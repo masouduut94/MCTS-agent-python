@@ -10,10 +10,9 @@ RAVE AND QUALITY-BASED REWARDS ALGORITHMS](https://www.civilica.com/Paper-CONFIT
 
 Researches have been done in **Urmia University of Technology**.
 <p align="center">
-
-<img src="https://github.com/masouduut94/MCTS-agent-python/tree/master/image/uut_2.png">
-
+    <img src="https://github.com/masouduut94/MCTS-agent-python/tree/master/image/uut_2.png">
 </p>
+
 #### Authors: 
 - Masoud Masoumi Moghadam (Me :sunglasses:), 
 - Prof: Mohammad Pourmahmood Aghababa, 
