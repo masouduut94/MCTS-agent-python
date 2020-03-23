@@ -12,9 +12,11 @@ This is the code for my paper **:link: [IMPROVING MONTE CARLO TREE SEARCH BY COM
 RAVE AND QUALITY-BASED REWARDS ALGORITHMS](https://www.civilica.com/Paper-CONFITC04-CONFITC04_172.html)**.
 
 Researches have been done in **Urmia University of Technology**.
+<p align="center">
 
 ![Urmia University of Technology](image/uut_2.png)
 
+</p>
 #### Authors: 
 - Masoud Masoumi Moghadam (Me :sunglasses:), 
 - Prof: Mohammad Pourmahmood Aghababa, 
