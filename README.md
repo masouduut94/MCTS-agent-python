@@ -1,8 +1,11 @@
 # Monte-Carlo-Tree-Search-Agent-for-the-Game-of-HEX
 
 ## Demo:
+<p align="center">
 
-![Demo of MCTS General Game Player](resources/demo.gif)
+![Demo of MCTS General Game Player](resources/demo.gif) 
+
+</p>
 
 ### Description
 This is the code for my paper **:link: [IMPROVING MONTE CARLO TREE SEARCH BY COMBINING 
