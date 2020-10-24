@@ -20,9 +20,9 @@ Researches have been done in **Urmia University of Technology**.
 </p>
 
 #### Authors: 
-- Masoud Masoumi Moghadam (Me :sunglasses:), 
-- Prof: Mohammad Pourmahmood Aghababa, 
-- Prof: Jamshid Bagherzadeh
+- Masoud Masoumi Moghadam (Me :sunglasses:)
+- Prof: Mohammad Pourmahmood Aghababa [profile](https://bit.ly/3dV23Be)
+- Prof: Jamshid Bagherzadeh [profile](https://bit.ly/3dPX4Sc)
 
 ## What is monte carlo tree search anyway?
 MONTE Carlo Tree Search (MCTS) is a method for finding optimal decisions in a given domain by
