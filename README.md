@@ -8,7 +8,7 @@
 This is the code for my paper **:link: [IMPROVING MONTE CARLO TREE SEARCH BY COMBINING 
 RAVE AND QUALITY-BASED REWARDS ALGORITHMS](https://www.civilica.com/Paper-CONFITC04-CONFITC04_172.html)**.
 
-the base code is developed by kenny young in [here](https://github.com/kenjyoung/mopyhex) and I further implemented the gui and some simulation algorithms.
+Original repository: Authored by Kenny Young [here](https://github.com/kenjyoung/mopyhex) and I further implemented the gui and some simulation algorithms.
 
 This project is further optimized in [here](https://github.com/masouduut94/MCTS-agent-cythonized)
 
