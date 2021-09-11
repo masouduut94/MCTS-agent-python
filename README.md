@@ -28,18 +28,22 @@ sparse rewards. it takes so much time to warm up the tree with simple UCT algori
 the RAVE algorithm** that helps warm up tree faster. then implemented **several simulation strategy like Last Good Reply,
 PoolRAVE, Decisive Move and also UCB1-Tuned**.
 
-Then we applied quality based rewards which conceptually it asserts that we can apply discounted rewards by knowing 
-the length of simulation and the maximum number of actions allowed to take in environment.
+Then we applied **quality based rewards** in [Quality-based Rewards for Monte-Carlo Tree Search Simulations](https://dl.acm.org/doi/10.5555/3006652.3006771) 
+which basically it asserts that we can apply discounted rewards by knowing the length of simulation and the 
+maximum number of actions allowed to take in environment for each player (sometimes in games the horizon of game
+has limits like the game of GO and HEX).
 
-after that we used HRAVE and GRAVE in the paper [Comparison of rapid action value estimation variants for general game playing 2018 - Chiara F. Sironi; Mark H. M. Winands](https://ieeexplore.ieee.org/document/7860429)
-which conceptually states that we can use the global information of the game to guide the simulations.
+After that we used HRAVE and GRAVE in the paper [Comparison of rapid action value estimation variants for general game playing 2018 - Chiara F. Sironi; Mark H. M. Winands](https://ieeexplore.ieee.org/document/7860429)
+which basically states that we can use the global information of the game to guide the simulations.
+We also tested the leaf threading on UCT.
 
-We also tested the leaf threading on UCT
+all of above algorithms are addressed below.
 
+### Original repo
 
-Original repo: Authored by Kenny Young [here](https://github.com/kenjyoung/mopyhex)
+- MopyHex: Authored by Kenny Young [here](https://github.com/kenjyoung/mopyhex)
 
-Contributions in this repo:
+### Contributions to the original repo:
 - implementing Generalized Rapid Action Value Estimation
 - implementing HRAVE and GRAVE algorithms in [Comparison of rapid action value estimation variants for general game playing 2018 - Chiara F. Sironi; Mark H. M. Winands](https://ieeexplore.ieee.org/document/7860429)
 - implementing Quality-based rewards in [Quality-based Rewards for Monte-Carlo Tree Search Simulations](https://dl.acm.org/doi/10.5555/3006652.3006771)
