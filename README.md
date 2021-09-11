@@ -2,7 +2,7 @@
 
 ## Demo:
 
-![Demo of MCTS General Game Player](resources/demo.gif) 
+![Demo of MCTS General Game Player](https://github.com/masouduut94/MCTS-agent-python/blob/master/resources/demo.gif) 
 
 ### Description
 This is the code for my paper **:link: [IMPROVING MONTE CARLO TREE SEARCH BY COMBINING 
