@@ -33,9 +33,9 @@ which basically it asserts that we can apply discounted rewards by knowing the l
 maximum number of actions allowed to take in environment for each player (sometimes in games the horizon of game
 has limits like the game of GO and HEX).
 
-After that we used HRAVE and GRAVE in the paper [Comparison of rapid action value estimation variants for general game playing 2018 - Chiara F. Sironi; Mark H. M. Winands](https://ieeexplore.ieee.org/document/7860429)
-which basically states that we can use the global information of the game to guide the simulations.
-We also tested the leaf threading on UCT.
+After that we used **HRAVE and GRAVE in the paper [Comparison of rapid action value estimation variants for general game playing 2018 - Chiara F. Sironi; Mark H. M. Winands](https://ieeexplore.ieee.org/document/7860429)**
+which basically states that we can use the **global information of the game to guide the simulations**.
+We also tested the **leaf threading on UCT**.
 
 all of above algorithms are addressed below.
 
@@ -49,7 +49,7 @@ all of above algorithms are addressed below.
 - implementing Quality-based rewards in [Quality-based Rewards for Monte-Carlo Tree Search Simulations](https://dl.acm.org/doi/10.5555/3006652.3006771)
 - implementing leaf-threading on basic No frills UCT.
 
-This project is further optimized in [here](https://github.com/masouduut94/MCTS-agent-cythonized)
+**This project has a further optimized version in [here](https://github.com/masouduut94/MCTS-agent-cythonized) which optimized by cython.**
 
 ### Researches have been done in **Urmia University of Technology**.
 <p align="center">
