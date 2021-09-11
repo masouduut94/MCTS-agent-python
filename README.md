@@ -15,7 +15,7 @@ This project is further optimized in [here](https://github.com/masouduut94/MCTS-
 Researches have been done in **Urmia University of Technology**.
 <p align="center">
 
-<img src="https://github.com/masouduut94/MCTS-agent-python/blob/master/image/uut_3.jpg">
+<img src="https://github.com/masouduut94/MCTS-agent-python/blob/master/image/ssss.png">
     
 </p>
 
