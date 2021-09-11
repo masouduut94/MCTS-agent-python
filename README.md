@@ -5,8 +5,8 @@
 ![Demo of MCTS General Game Player](https://github.com/masouduut94/MCTS-agent-python/blob/master/resources/demo.gif) 
 
 ## Description
-This code belongs to one of my paper **:link: [IMPROVING MONTE CARLO TREE SEARCH BY COMBINING
-RAVE AND QUALITY-BASED REWARDS ALGORITHMS](https://www.civilica.com/Paper-CONFITC04-CONFITC04_172.html)**.
+This code belongs this paper **:link: [IMPROVING MONTE CARLO TREE SEARCH BY COMBINING
+RAVE AND QUALITY-BASED REWARDS ALGORITHMS](https://github.com/masouduut94/MCTS-agent-python/blob/master/paper/CONFITC04_172.pdf)**.
 
 ### what is Monte Carlo Tree Search(MCTS)?
 MONTE Carlo Tree Search (MCTS) is a method for finding optimal decisions in a given domain by
@@ -17,8 +17,24 @@ In this project I used different simulation strategies to enhance the agent poli
 
  from :link: [A Survey of Monte Carlo Tree Search Methods](http://ieeexplore.ieee.org/abstract/document/6145622/)
 
+### About contribution
+Before you go through the details, I recommend you to get familiar with the framework reading these medium articles:
+- [A simple no math included introduction to reinforcement learning](https://towardsdatascience.com/monte-carlo-tree-search-a-case-study-along-with-implementation-part-1-ebc7753a5a3b)
+- [A simple introduction to Monte Carlo Tree Search](https://towardsdatascience.com/monte-carlo-tree-search-implementing-reinforcement-learning-in-real-time-game-player-25b6f6ac3b43)
+- [Details of MCTS implementation on game of HEX](https://towardsdatascience.com/monte-carlo-tree-search-implementing-reinforcement-learning-in-real-time-game-player-a9c412ebeff5)
 
+So if you are familiar with the whole concept of MCTS and UCT algorithm, you must know that in practice it suffers from 
+sparse rewards. it takes so much time to warm up the tree with simple UCT algorithm. So in this case we **first implemented
+the RAVE algorithm** that helps warm up tree faster. then implemented **several simulation strategy like Last Good Reply,
+PoolRAVE, Decisive Move and also UCB1-Tuned**.
 
+Then we applied quality based rewards which conceptually it asserts that we can apply discounted rewards by knowing 
+the length of simulation and the maximum number of actions allowed to take in environment.
+
+after that we used HRAVE and GRAVE in the paper [Comparison of rapid action value estimation variants for general game playing 2018 - Chiara F. Sironi; Mark H. M. Winands](https://ieeexplore.ieee.org/document/7860429)
+which conceptually states that we can use the global information of the game to guide the simulations.
+
+We also tested the leaf threading on UCT
 
 
 Original repo: Authored by Kenny Young [here](https://github.com/kenjyoung/mopyhex)
