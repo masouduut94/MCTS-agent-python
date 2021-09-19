@@ -93,3 +93,12 @@ This one is highly recommended:
 - Quality Based Rewards
 - Pool RAVE
 - Last Good Reply
+
+
+# References
+[1] A Survey of Monte Carlo Tree Search Methods, Cameron B. Browne et al, [Link to paper](https://ieeexplore.ieee.org/document/6145622)
+[2] Generalized Rapid Action Value Estimation, Tristan Cazenave,  [Link to paper](https://www.ijcai.org/Proceedings/15/Papers/112.pdf)
+[3] Comparison of rapid action value estimation variants for general game playing, C. Sironi, [Link to paper](https://ieeexplore.ieee.org/document/7860429)
+[4] Quality-based Rewards for Monte-Carlo Tree Search Simulations, [Link to paper](https://dl.acm.org/doi/10.5555/3006652.3006771)
+
+
