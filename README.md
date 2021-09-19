@@ -96,9 +96,10 @@ This one is highly recommended:
 
 
 # References
-[1] A Survey of Monte Carlo Tree Search Methods, Cameron B. Browne et al, [Link to paper](https://ieeexplore.ieee.org/document/6145622)
-[2] Generalized Rapid Action Value Estimation, Tristan Cazenave,  [Link to paper](https://www.ijcai.org/Proceedings/15/Papers/112.pdf)
-[3] Comparison of rapid action value estimation variants for general game playing, C. Sironi, [Link to paper](https://ieeexplore.ieee.org/document/7860429)
-[4] Quality-based Rewards for Monte-Carlo Tree Search Simulations, [Link to paper](https://dl.acm.org/doi/10.5555/3006652.3006771)
-
+- [1] A Survey of Monte Carlo Tree Search Methods, Cameron B. Browne et al, 2012 [Link to paper](https://ieeexplore.ieee.org/document/6145622)
+- [2] Generalized Rapid Action Value Estimation, Tristan Cazenave,  2017 [Link to paper](https://www.ijcai.org/Proceedings/15/Papers/112.pdf)
+- [3] Comparison of rapid action value estimation variants for general game playing, C. Sironi, 2018 [Link to paper](https://ieeexplore.ieee.org/document/7860429)
+- [4] Quality-based Rewards for Monte-Carlo Tree Search Simulations, 2014 [Link to paper](https://dl.acm.org/doi/10.5555/3006652.3006771)
+- [5] The Last-Good-Reply Policy for Monte-Carlo Go 2009 [Link to paper](https://www.semanticscholar.org/paper/The-Last-Good-Reply-Policy-for-Monte-Carlo-Go-Drake/980e6b8ef765b0fe4fc3fe8f068c79ac4169b00f) 
+- [6] On the Huge Benefit of Decisive Moves in Monte-Carlo Tree Search Algorithms, Fabien Teytaud, Olivier Teytaud, 2010
 
