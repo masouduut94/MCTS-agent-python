@@ -1,5 +1,5 @@
 from random import choice
-from time import clock
+from time import time as clock
 from gamestate import GameState
 from uct_mcstsagent import UctMctsAgent, Node
 from numpy.random import randint

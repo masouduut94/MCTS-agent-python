@@ -2,7 +2,7 @@ from math import sqrt, log
 from copy import deepcopy
 from queue import Queue
 from random import choice
-from time import clock
+from time import time as clock
 from meta import GameMeta, MCTSMeta
 from gamestate import GameState
 

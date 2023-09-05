@@ -1,7 +1,7 @@
 from math import sqrt, log
 from copy import deepcopy
 from random import choice, random
-from time import clock
+from time import time as clock
 
 from gamestate import GameState
 from uct_mcstsagent import Node, UctMctsAgent

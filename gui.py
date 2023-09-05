@@ -220,26 +220,48 @@ class Gui:
         Creates a hexagon by getting a list of points and their assigned colors
         according to the game board
         """
-        if color is 0:
-            hx = self.canvas.create_polygon(points[0], points[1], points[2],
+        match color:
+            case 0:
+                # if color == 0:
+                hx = self.canvas.create_polygon(points[0], points[1], points[2],
                                             points[3], points[4], points[5],
                                             fill=self.colors['gray1'], outline='black', width=2, activefill='cyan')
-        elif color is 1:
-            hx = self.canvas.create_polygon(points[0], points[1], points[2],
+            case 1:
+                hx = self.canvas.create_polygon(points[0], points[1], points[2],
                                             points[3], points[4], points[5],
                                             fill=self.colors['yellow'], outline='black', width=2, activefill='cyan')
-        elif color is 2:
-            hx = self.canvas.create_polygon(points[0], points[1], points[2],
+            case 2:
+                hx = self.canvas.create_polygon(points[0], points[1], points[2],
                                             points[3], points[4], points[5],
                                             fill=self.colors['red'], outline='black', width=2, activefill='cyan')
-        elif color is 3:
-            hx = self.canvas.create_polygon(points[0], points[1], points[2],
+            case 3:
+                hx = self.canvas.create_polygon(points[0], points[1], points[2],
                                             points[3], points[4], points[5],
                                             fill=self.colors['black'], outline='black', width=2)
-        else:
-            hx = self.canvas.create_polygon(points[0], points[1], points[2],
+            case _:
+                hx = self.canvas.create_polygon(points[0], points[1], points[2],
                                             points[3], points[4], points[5],
                                             fill=self.colors['white'], outline='black', width=2)
+        # if color == 0:
+        #        hx = self.canvas.create_polygon(points[0], points[1], points[2],
+        #                                    points[3], points[4], points[5],
+        #                                    fill=self.colors['gray1'], outline='black', width=2, activefill='cyan')
+        # elif color is 1:
+        #     hx = self.canvas.create_polygon(points[0], points[1], points[2],
+        #                                     points[3], points[4], points[5],
+        #                                     fill=self.colors['yellow'], outline='black', width=2, activefill='cyan')
+        # elif color is 2:
+        #     hx = self.canvas.create_polygon(points[0], points[1], points[2],
+        #                                     points[3], points[4], points[5],
+        #                                     fill=self.colors['red'], outline='black', width=2, activefill='cyan')
+        # elif color is 3:
+        #     hx = self.canvas.create_polygon(points[0], points[1], points[2],
+        #                                     points[3], points[4], points[5],
+        #                                     fill=self.colors['black'], outline='black', width=2)
+        # else:
+        #     hx = self.canvas.create_polygon(points[0], points[1], points[2],
+        #                                     points[3], points[4], points[5],
+        #                                     fill=self.colors['white'], outline='black', width=2)
         return hx
 
     def generate_row(self, points, colors):
@@ -256,12 +278,19 @@ class Gui:
                 temp_points_x = point[0] + x_offset * i
                 temp_points_y = point[1]
                 temp_array.append([temp_points_x, temp_points_y])
-            if colors[i] is 0:
-                hx = self.hexagon(temp_array, 0)
-            elif colors[i] is 1:
-                hx = self.hexagon(temp_array, 4)
-            else:
-                hx = self.hexagon(temp_array, 3)
+            match colors[i]:
+                case 0:
+                    hx = self.hexagon(temp_array, 0)
+                case 1: 
+                    hx = self.hexagon(temp_array, 4)
+                case _:
+                    hx = self.hexagon(temp_array, 3)
+            # if colors[i] is 0:
+            #     hx = self.hexagon(temp_array, 0)
+            # elif colors[i] is 1:
+            #     hx = self.hexagon(temp_array, 4)
+            # else:
+            #     hx = self.hexagon(temp_array, 3)
             row.append(hx)
             temp_array = []
         return row
