@@ -1,4 +1,6 @@
-# Monte-Carlo-Tree-Search-Agent-for-the-Game-of-HEX
+# HexPy
+
+### Monte Carlo Tree Search Agent for the game of HEX
 
 ## Demo:
 
